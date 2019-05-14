@@ -1,0 +1,13 @@
+[Unit]
+Description=Log the time how long the machine is running
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/usr/local/bin/timeTracker.sh start
+ExecStop=/usr/local/bin/timeTracker.sh stop
+
+[Install]
+WantedBy=multi-user.target
+
+# Place under /etc/systemd/system/timeTracker.service
