@@ -95,7 +95,6 @@ openFile()
   exit 0
 }
 
-
 help() {
 	echo -e "${scriptName}\n"
 	echo -e "Usage:\n"
